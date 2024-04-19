@@ -1,7 +1,6 @@
 package com.itstudy.projectdemo.service;
 
-
-import com.itstudy.pojo.Dept;
+import com.itstudy.projectdemo.pojo.Dept;
 
 import java.util.List;
 

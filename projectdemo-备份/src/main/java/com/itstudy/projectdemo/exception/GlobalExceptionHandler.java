@@ -1,6 +1,6 @@
 package com.itstudy.projectdemo.exception;
 
-import com.itstudy.pojo.Result;
+import com.itstudy.projectdemo.pojo.Result;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 

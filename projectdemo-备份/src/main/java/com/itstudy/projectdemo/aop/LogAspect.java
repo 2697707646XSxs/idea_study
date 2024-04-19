@@ -1,8 +1,8 @@
 package com.itstudy.projectdemo.aop;
 
 import com.alibaba.fastjson.JSONObject;
-import com.itstudy.pojo.OperateLog;
 import com.itstudy.projectdemo.mapper.OperateLogMapper;
+import com.itstudy.projectdemo.pojo.OperateLog;
 import com.itstudy.projectdemo.util.JwtUtils;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.HttpServletRequest;
