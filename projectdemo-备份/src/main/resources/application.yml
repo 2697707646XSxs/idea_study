@@ -1,0 +1,49 @@
+#使用yml（yaml）文件进行项目配置，和properties效果一样
+#yml（yaml）文件层级比较清晰，简洁，区分大小写，换行加空格表示层级
+spring:
+  #数据库的连接信息
+  application:
+    name: projectdome
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/projectdome
+    username: root
+    password: 2697707646xsXS
+  #文件上传的配置
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1GB
+#数据库自动驼峰命名的配置
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+#阿里云oss的配置
+aliyun:
+  oss:
+    endpoint: https://oss-cn-hangzhou.aliyuncs.com
+    accessKeyId: LTAI5tAjmnD3fJa2nKvsjJmW
+    accessKeySecret: FfsMowfa49TI5CdBVPwVD4QySybEyc
+    bucketName: web-tlias-huangchao
+#开启事务管理日志
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

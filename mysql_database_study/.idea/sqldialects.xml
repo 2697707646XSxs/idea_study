@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/0dd77262-85b7-46e4-9e4c-fed82d0c1c55/mysql_study.sql" dialect="MySQL" />
+    <file url="file://D:/BaiduNetdiskDownload/资料/day07-MySQL/day07-MySQL/资料/01. DQL/1. DQL-数据准备.sql" dialect="MySQL" />
+    <file url="file://D:/BaiduNetdiskDownload/资料/day07-MySQL/day07-MySQL/资料/03. 多表设计/dept &amp; emp.sql" dialect="MySQL" />
+    <file url="file://D:/BaiduNetdiskDownload/资料/day07-MySQL/day07-MySQL/资料/03. 多表设计/user &amp; card.sql" dialect="MySQL" />
+    <file url="file://D:/BaiduNetdiskDownload/资料/day08-MySQL-Mybatis入门/day08-MySQL-Mybatis入门/资料/01. 多表查询/01. 数据准备.sql" dialect="MySQL" />
+    <file url="file://D:/BaiduNetdiskDownload/资料/day08-MySQL-Mybatis入门/day08-MySQL-Mybatis入门/资料/02. 多表查询 - 案例/01. 数据准备.sql" dialect="MySQL" />
+    <file url="file://D:/BaiduNetdiskDownload/资料/day08-MySQL-Mybatis入门/day08-MySQL-Mybatis入门/资料/03. Mybatis入门程序/user.sql" dialect="MySQL" />
+    <file url="file://D:/BaiduNetdiskDownload/资料/day10-SpringBootWeb案例/day10-SpringBootWeb案例/资料/02. 环境准备/1. SQL脚本/数据准备.sql" dialect="MySQL" />
+  </component>
+</project>

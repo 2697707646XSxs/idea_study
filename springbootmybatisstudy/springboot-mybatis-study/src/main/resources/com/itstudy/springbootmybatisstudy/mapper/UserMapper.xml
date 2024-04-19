@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itstudy.springbootmybatisstudy.mapper.UserMapper">
+    <sql id="commonSelect">-- 相当于一个方法，id就是引用的标识符
+        select id, name, age, gender, phone
+        from user
+    </sql>
+    <update id="updateUser">
+        update user
+        set
+        <trim suffixOverrides=","><!--也可以直接使用<set></set>标签，去除多余逗号-->
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="age != null">
+                age = #{age},
+            </if>
+            <if test="gender != null">
+                gender = #{gender},
+            </if>
+            <if test="phone != null and phone != ''">
+                phone = #{phone}
+            </if>
+        </trim>
+        where id = #{id}
+    </update>
+    <delete id="deleteUser">
+        delete from user
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+        </where>
+    </delete>
+    <select id="getUser" resultType="com.itstudy.springbootmybatisstudy.pojo.User">
+<include refid="commonSelect"/>
+        <where><!--<where></where>,动态生成条件关键字，以及自动选择是否去除and关键字-->
+            <if test="name !=null">/*条件成立拼接否则不拼接*/
+                name like concat('%', #{name}, '%')
+            </if>
+            <if test="gender != null">
+                and gender = #{gender}
+            </if>
+        </where>
+    </select>
+    <insert id="insertUser" parameterType="com.itstudy.springbootmybatisstudy.pojo.User">
+        insert into user
+        <trim prefix="(" suffix=")" suffixOverrides=",">/*因为id自增所以不需要插入*/
+            <if test="name != null and name != ''">
+                name,
+            </if>
+            <if test="age != null">
+                age,
+            </if>
+            <if test="gender != null">
+                gender,
+            </if>
+            <if test="phone != null and phone != ''">
+                phone,
+            </if>
+        </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            <if test="name != null and name != ''">
+                #{name},
+            </if>
+            <if test="age != null and age != ''">
+                #{age},
+            </if>
+            <if test="gender != null and gender != ''">
+                #{gender},
+            </if>
+            <if test="phone != null and phone != ''">
+                #{phone},
+            </if>
+        </trim>
+    </insert>
+    <!--批量删除操作-->
+    <!--collection 遍历的集合 ，item 遍历出来的元素，separator 分隔符，open 开始前拼接的片段,close 结束后拼接的片段-->
+    <delete id="deleteUsers">
+        delete
+        from user
+        where id in
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>
+<!--<mapper namespace="">,mapper对应接口名，id对应语句类型，resultType对应返回数值类型
+    <select id="getUser" resultType="com.itstudy.springbootmybatisstudy.pojo.User">
+        /*resultType单条记录所封装的类型*/
+        select * from user where name like concat('%',#{name},'%') and gender = #{gender}
+    </select>
+</mapper>-->
