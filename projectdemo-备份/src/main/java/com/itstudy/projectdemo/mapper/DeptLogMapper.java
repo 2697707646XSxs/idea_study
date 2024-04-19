@@ -1,6 +1,6 @@
 package com.itstudy.projectdemo.mapper;
 
-import com.itstudy.projectdemo.pojo.Deptlog;
+import com.itstudy.pojo.Deptlog;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 

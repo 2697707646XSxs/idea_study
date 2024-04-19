@@ -1,11 +1,11 @@
 package com.itstudy.projectdemo.service.impl;
 
+import com.itstudy.pojo.Dept;
+import com.itstudy.pojo.Deptlog;
 import com.itstudy.projectdemo.anno.Log;
 import com.itstudy.projectdemo.mapper.DeptLogMapper;
 import com.itstudy.projectdemo.mapper.DeptMapper;
 import com.itstudy.projectdemo.mapper.EmpMapper;
-import com.itstudy.projectdemo.pojo.Dept;
-import com.itstudy.projectdemo.pojo.Deptlog;
 import com.itstudy.projectdemo.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

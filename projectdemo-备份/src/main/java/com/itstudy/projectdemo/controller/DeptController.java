@@ -1,8 +1,8 @@
 package com.itstudy.projectdemo.controller;
 
 
-import com.itstudy.projectdemo.pojo.Dept;
-import com.itstudy.projectdemo.pojo.Result;
+import com.itstudy.pojo.Dept;
+import com.itstudy.pojo.Result;
 import com.itstudy.projectdemo.service.DeptService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
