@@ -2,20 +2,42 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
+    <parent><!--继承的父工程-->
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <!--版本锁定,过于繁琐，可以使用底下的自定义属性来完成-->
+    <dependencyManagement><!--通过该标签来统一控制该工程及该工程的子工程的依赖版本，注意依赖还是需要自己注入的，不需要输入版本号而已-->
+        <dependencies>
+            <dependency>
+                <!--pagehelper分页插件的依赖-->
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <groupId>com.itstudy</groupId>
     <artifactId>projectdome</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <!--SNAPSHOT，不稳定版本，如果上传私服将进入不稳定服务器
+        RELEASE,稳定版本，如果上传私服将进入稳定服务器-->
     <name>projectdome</name>
     <description>projectdome</description>
+    <!--自定义属性，可以通过这样指定依赖的版本号，通过${pagehelper.version}来注入版本-->
     <properties>
         <java.version>21</java.version>
+        <pagehelper.version>1.4.6</pagehelper.version>
     </properties>
+
+    <!--聚会标签，一般存在于父工程（只存在pom文件），聚合其他模块，方便一键打包-->
+    <modules>
+        <!--父工程和聚合工程一般在一起，并且应该是pom类型，而不是默认的jar类型-->
+        <!--在module里面输入需要聚合模块的名字例如我聚合tlias-pojo-->
+        <!--<module>../../tlias-pojo</module>-->
+    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -126,6 +148,21 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
+
+    <!--当该模块需要打包成jar包上传到私服时需要以下配置，这里不需要所以暂时注释掉-->
+<!--    <distributionManagement>
+        &lt;!&ndash;release版本的发布地址&ndash;&gt;
+        <repository>
+            <id></id>&lt;!&ndash;仓库名称&ndash;&gt;
+            <url></url>&lt;!&ndash;仓库地址&ndash;&gt;
+        </repository>
+        &lt;!&ndash;snapshot版本的发布地址&ndash;&gt;
+        <snapshotRepository>
+            <id></id>&lt;!&ndash;仓库名称&ndash;&gt;
+            <url></url>&lt;!&ndash;仓库地址&ndash;&gt;
+        </snapshotRepository>
+    </distributionManagement>-->
+
     <build>
         <plugins>
             <plugin>

@@ -4,11 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d4c443a-58e6-4cca-8e38-5fe473259fc8" name="Changes" comment="" />
+    <list default="true" id="4d4c443a-58e6-4cca-8e38-5fe473259fc8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aliyun-oss-spring-boot-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aliyun-oss-spring-boot-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nginx-1.22.0-tlias/nginx-1.22.0-tlias/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/../nginx-1.22.0-tlias/nginx-1.22.0-tlias/logs/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nginx-1.22.0-tlias/nginx-1.22.0-tlias/logs/nginx.pid" beforeDir="false" afterPath="$PROJECT_DIR$/../nginx-1.22.0-tlias/nginx-1.22.0-tlias/logs/nginx.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projectdemo-备份/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../projectdemo-备份/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootmybatisstudy/projectdemo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootmybatisstudy/projectdemo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootmybatisstudy/projectdemo/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootmybatisstudy/projectdemo/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootmybatisstudy/projectdemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootmybatisstudy/projectdemo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootmybatisstudy/projectdemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootmybatisstudy/projectdemo/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,8 +55,9 @@
     &quot;Maven.aliyun-oss-spring-boot-autoconfigure [idea:module].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/idea_study&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/idea_study/aliyun-oss-spring-boot-autoconfigure&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -81,6 +100,8 @@
       <workItem from="1713428222231" duration="1270000" />
       <workItem from="1713438607559" duration="15000" />
       <workItem from="1713501328402" duration="30000" />
+      <workItem from="1713517930055" duration="20000" />
+      <workItem from="1713597647411" duration="23000" />
     </task>
     <servers />
   </component>
